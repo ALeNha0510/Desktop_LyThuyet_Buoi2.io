@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{627474F9-862A-402A-B1AC-7974A5334A20}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LyThuyetBuoi2</RootNamespace>
+    <AssemblyName>LyThuyetBuoi2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChinh.Designer.cs">
+      <DependentUpon>FrmChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListView.Designer.cs">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaskerTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaskerTextBox.Designer.cs">
+      <DependentUpon>FrmMaskerTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuStrip.Designer.cs">
+      <DependentUpon>FrmMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.Designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthCalendar_DateTimePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthCalendar_DateTimePicker.Designer.cs">
+      <DependentUpon>FrmMonthCalendar_DateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNhanVien.Designer.cs">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNumDomainUpDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNumDomainUpDown.Designer.cs">
+      <DependentUpon>FrmNumDomainUpDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToolStrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToolStrip.Designer.cs">
+      <DependentUpon>FrmToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPictureBox_ImageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPictureBox_ImageList.Designer.cs">
+      <DependentUpon>FrmPictureBox_ImageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmRichTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRichTextBox.Designer.cs">
+      <DependentUpon>FrmRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTimer_ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTimer_ProgressBar.Designer.cs">
+      <DependentUpon>FrmTimer_ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTreeView.Designer.cs">
+      <DependentUpon>FrmTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyNhanVien.cs" />
+    <EmbeddedResource Include="FrmChinh.resx">
+      <DependentUpon>FrmChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListView.resx">
+      <DependentUpon>FrmListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaskerTextBox.resx">
+      <DependentUpon>FrmMaskerTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuStrip.resx">
+      <DependentUpon>FrmMenuStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthCalendar_DateTimePicker.resx">
+      <DependentUpon>FrmMonthCalendar_DateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNhanVien.resx">
+      <DependentUpon>FrmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNumDomainUpDown.resx">
+      <DependentUpon>FrmNumDomainUpDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPictureBox_ImageList.resx">
+      <DependentUpon>FrmPictureBox_ImageList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRichTextBox.resx">
+      <DependentUpon>FrmRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTimer_ProgressBar.resx">
+      <DependentUpon>FrmTimer_ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToolStrip.resx">
+      <DependentUpon>FrmToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTreeView.resx">
+      <DependentUpon>FrmTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
